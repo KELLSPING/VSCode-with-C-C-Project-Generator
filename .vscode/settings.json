@@ -4,8 +4,12 @@
         // "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         // "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
 
-        /* modified to */
-        "c": "cd $dir && gcc *.c -o ..\\output\\$fileNameWithoutExt && ..\\output\\$fileNameWithoutExt",
+        /* .c files in the same folder */
+        // "c": "cd $dir && gcc *.c -o ..\\output\\$fileNameWithoutExt && ..\\output\\$fileNameWithoutExt",
+        // "cpp": "cd $dir && g++ *.cpp -o ..\\output\\$fileNameWithoutExt && ..\\output\\$fileNameWithoutExt",
+
+        /* .c files in the different folder */
+        "c": "cd $dir && gcc *.c ..\\lib\\*.c  -o ..\\output\\$fileNameWithoutExt && ..\\output\\$fileNameWithoutExt",
         "cpp": "cd $dir && g++ *.cpp -o ..\\output\\$fileNameWithoutExt && ..\\output\\$fileNameWithoutExt",
     }
 }

@@ -11,6 +11,7 @@
                 "-fdiagnostics-color=always",
                 "-g", // generates debugging info
                 "${workspaceFolder}\\src\\*.c",
+                "${workspaceFolder}\\lib\\*.c",
                 "-o", // assign output path
                 "${workspaceFolder}\\output\\${fileBasenameNoExtension}.exe"
             ],
