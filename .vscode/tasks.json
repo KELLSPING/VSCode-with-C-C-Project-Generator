@@ -2,14 +2,16 @@
     "version": "2.0.0",
     "tasks": [
         {
+            /* Task name */
             "label": "C/C++: gcc.exe 建置使用中檔案",
             "type": "cppbuild",
+            /* Compiler path */
             "command": "C:\\ProgramData\\chocolatey\\bin\\gcc.exe",
             "args": [
                 "-fdiagnostics-color=always",
-                "-g",
+                "-g", // generates debugging info
                 "${workspaceFolder}\\src\\*.c",
-                "-o",
+                "-o", // assign output path
                 "${workspaceFolder}\\output\\${fileBasenameNoExtension}.exe"
             ],
             "options": {

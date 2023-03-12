@@ -2,6 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
+            /* Debug task name */
             "name": "Debug",
             "type": "cppdbg",
             "request": "launch",
@@ -11,7 +12,9 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
+            /* Debugger path */
             "miDebuggerPath": "C:\\ProgramData\\chocolatey\\bin\\gdb.exe",
+            /* Debugged program path  */
             "program": "${workspaceFolder}\\output\\${fileBasenameNoExtension}.exe",
             "setupCommands": [
                 {
@@ -20,6 +23,7 @@
                     "ignoreFailures": true
                 }
             ],
+            /* Task name */
             "preLaunchTask": "C/C++: gcc.exe 建置使用中檔案"
         }
     ]
