@@ -52,6 +52,8 @@
 
 ## Learning Target ##
 
-* Use C/C++ Project Generator to create c project
+* learning curve
 
-* Settings some paths in the ".vscode"
+  1. Use C/C++ Project Generator to create c project, then compile .c files in the "same" folder.
+
+  2. Use C/C++ Project Generator to create c project, then compile .c files in the "different" folder.
